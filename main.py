@@ -102,17 +102,8 @@ def get_birthday(birthday, year, today):
     return birth_day
  
  
-def get_ciba():
-    url = "https://api.shadiao.pro/chp"
-    headers = {
-        'Content-Type': 'application/json',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-                      'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
-    }
-    r = get(url, headers=headers)
-    note_en = r.json()["content"]
-    note_ch = r.json()["note"]
-    return note_ch, note_en
+def get_ciba():  
+    return requests.get('https://api.vvhan.com/api/love').text
  
  
 def send_message(to_user, access_token, region_name, weather, temp, wind_dir, note_ch, note_en):
