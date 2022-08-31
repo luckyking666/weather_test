@@ -1,4 +1,5 @@
 import random
+import requests
 from time import localtime
 from requests import get, post
 from datetime import datetime, date
