@@ -103,7 +103,7 @@ def get_birthday(birthday, year, today):
  
  
 def get_ciba():
-    url = "https://api.vvhan.com/api/love"
+    url = "https://api.shadiao.pro/chp"
     headers = {
         'Content-Type': 'application/json',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
